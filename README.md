@@ -1,11 +1,12 @@
 # LPE AI Academy SK Demo
 
+This is project was put together to demonstrate how to use Semantic Kernel to develop AI solutions. It covers various topics like chat completions, embedding generation, tool calling, and agents. To keep things simple, most demos only modify or rely on the `Program.cs` file. We can do this because of the [top level statements](https://learn.microsoft.com/en-us/dotnet/csharp/tutorials/top-level-statements) feature introduced in .Net 6.
 
-To be able run any of the code, please ensure that you have gone through the [prerequisites](Docs/Prerequisites.md) documentation. You will need an Azure AI Foundry project with certain models deployed in addition to other resources and software.
+To be able run any of the code, please ensure that you have gone through the [prerequisites](Docs/Prerequisites.md) documentation. You will need some Azure resources, the .Net CLI, and some way to authenticate with Azure locally using the `DefaultAzureCredential()`.
 
 ## Demos
 
-This is project put together to demonstrate how to use Semantic Kernel to develop AI solutions. It covers various topics like chat completions, embedding generation, tool calling, and agents. You can learn more about each demo and see the final code snippet in their corresponding doc pages:
+You can learn more about each demo and see the final code snippet in their corresponding doc pages:
 
 - [Basic Chat Client Demo (Start Here)](Docs/BasicChatClientDemo.md)
 - [Basic Tool Demo](Docs/BasicToolDemo.md)
