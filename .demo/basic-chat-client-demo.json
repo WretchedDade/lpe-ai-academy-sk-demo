@@ -1,0 +1,188 @@
+{
+	"$schema": "https://demotime.elio.dev/demo-time.schema.json",
+	"title": "Basic Chat Client Demo",
+	"description": "",
+	"version": 2,
+	"demos": [
+		{
+			"title": "Build Kernel",
+			"description": "Build a kernel with a basic chat client.",
+			"steps": [
+				{
+					"action": "replace",
+					"path": "Program.cs",
+					"position": "start:end",
+					"contentPath": ".demo/basic-chat-client-demo/build-kernel.cs",
+					"lineInsertionDelay": 100
+				}
+			]
+		},
+		{
+			"title": "Get Chat Client",
+			"description": "Get the chat client from the kernel.",
+			"steps": [
+				{
+					"action": "insert",
+					"path": "Program.cs",
+					"position": 10,
+					"contentPath": ".demo/basic-chat-client-demo/get-chat-client.cs"
+				},
+				{
+					"action": "insert",
+					"path": "Program.cs",
+					"position": 2,
+					"contentPath": ".demo/basic-chat-client-demo/add-ai-extensions.cs"
+				},
+				{
+					"action": "highlight",
+					"path": "Program.cs",
+					"position": "12:13"
+				}
+			]
+		},
+		{
+			"title": "Add Chat Loop",
+			"description": "Add a loop to let the user chat with the client.",
+			"steps": [
+				{
+					"action": "insert",
+					"path": "Program.cs",
+					"position": 3,
+					"contentPath": ".demo/basic-chat-client-demo/add-spectre-console.cs",
+					"lineInsertionDelay": 50
+				},
+				{
+					"action": "insert",
+					"path": "Program.cs",
+					"position": 15,
+					"contentPath": ".demo/basic-chat-client-demo/chat-loop.cs",
+					"lineInsertionDelay": 50
+				},
+				{
+					"action": "highlight",
+					"path": "Program.cs",
+					"position": "29:30"
+				}
+			]
+		},
+		{
+			"title": "Run",
+			"description": "Run the application to see the chat client in action.",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "dotnet run -v q"
+				}
+			]
+		},
+		{
+			"title": "Send intro message",
+			"description": "Send an introductory message to the chat client.",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "Hi! I am doing a demo for the learning product engineering team on how to use semantic kernel with a basic chat client. Please say hi and share some of things you like about semantic kernel."
+				}
+			]
+		},
+		{
+			"title": "Show lack of history",
+			"description": "Sends a message to demonstrate that the llm won't know about previous messages",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "Hi, what have we talked about so far?"
+				}
+			]
+		},
+		{
+			"title": "Exit",
+			"description": "Exit the application to continue with the next step.",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "Exit"
+				},
+				{
+					"action": "closeTerminal"
+				},
+				{
+					"action": "executeVSCodeCommand",
+					"command": "workbench.action.closePanel"
+				}
+			]
+		},
+		{
+			"title": "Use Chat History",
+			"description": "Use chat history to include previous messages when sending a new message.",
+			"steps": [
+				{
+					"action": "insert",
+					"path": "Program.cs",
+					"position": 16,
+					"contentPath": ".demo/basic-chat-client-demo/add-messages-list.cs",
+					"lineInsertionDelay": 150
+				},
+				{
+					"action": "replace",
+					"path": "Program.cs",
+					"position": "30:31",
+					"contentPath": ".demo/basic-chat-client-demo/use-history-to-get-response.cs",
+					"lineInsertionDelay": 150
+				},
+				{
+					"action": "highlight",
+					"path": "Program.cs",
+					"position": "30:37"
+				}
+			]
+		},
+		{
+			"title": "Run",
+			"description": "Run the application to see the chat client in action.",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "dotnet run -v q"
+				}
+			]
+		},
+		{
+			"title": "Send intro message",
+			"description": "Send an introductory message to the chat client.",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "Hi! I am doing a demo for the learning product engineering team on how to use semantic kernel with a basic chat client. Please say hi and share some of things you like about semantic kernel."
+				}
+			]
+		},
+		{
+			"title": "Show ability to recall",
+			"description": "Sends a message to demonstrate that the llm will know about previous messages",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "Hi, what have we talked about so far?"
+				}
+			]
+		},
+		{
+			"title": "Exit",
+			"description": "Exit the application to continue with the next step.",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "Exit"
+				},
+				{
+					"action": "closeTerminal"
+				},
+				{
+					"action": "executeVSCodeCommand",
+					"command": "workbench.action.closePanel"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,199 @@
+{
+	"$schema": "https://demotime.elio.dev/demo-time.schema.json",
+	"title": "Basic Tool Demo",
+	"description": "",
+	"version": 2,
+	"demos": [
+		{
+			"title": "Initialize",
+			"steps": [
+				{
+					"action": "replace",
+					"path": "Program.cs",
+					"position": "start:end",
+					"contentPath": ".demo/basic-tool-demo/initial.cs"
+				}
+			]
+		},
+		{
+			"title": "Add initial lights plugin",
+			"steps": [
+				{
+					"action": "insert",
+					"path": "Program.cs",
+					"position": "56",
+					"contentPath": ".demo/basic-tool-demo/initial-lights-plugin.cs",
+					"lineInsertionDelay": 25
+				}
+			]
+		},
+		{
+			"title": "Import Lights Plugin",
+			"steps": [
+				{
+					"action": "insert",
+					"path": "Program.cs",
+					"position": "14",
+					"contentPath": ".demo/basic-tool-demo/import-lights-plugin.cs",
+					"lineInsertionDelay": 25
+				},
+				{
+					"action": "highlight",
+					"path": "Program.cs",
+					"position": "15:16"
+				}
+			]
+		},
+		{
+			"title": "Add Execution Settings",
+			"steps": [
+				{
+					"action": "replace",
+					"path": "Program.cs",
+					"position": "38:39",
+					"contentPath": ".demo/basic-tool-demo/add-execution-settings.cs",
+					"lineInsertionDelay": 25
+				},
+				{
+					"action": "highlight",
+					"path": "Program.cs",
+					"position": "38:42"
+				}
+			]
+		},
+		{
+			"title": "Run",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "dotnet run -v q"
+				}
+			]
+		},
+		{
+			"title": "Ask to add a light",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "Add a light named 'Living Room'. It should be red and off."
+				}
+			]
+		},
+		{
+			"title": "Exit",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "exit"
+				},
+				{
+					"action": "closeTerminal"
+				},
+				{
+					"action": "executeVSCodeCommand",
+					"command": "workbench.action.closePanel"
+				}
+			]
+		},
+		{
+			"title": "Add Remaining Functions",
+			"steps": [
+				{
+					"action": "insert",
+					"path": "Program.cs",
+					"position": "73",
+					"contentPath": ".demo/basic-tool-demo/remaining-lights-plugin-functions.cs",
+					"lineInsertionDelay": 10
+				}
+			]
+		},
+		{
+			"title": "Run",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "dotnet run -v q"
+				}
+			]
+		},
+		{
+			"title": "Ask to show lights",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "What lights are there?"
+				}
+			]
+		},
+		{
+			"title": "Ask to add a light",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "Add a light named 'Living Room'. It should be red and off."
+				}
+			]
+		},
+		{
+			"title": "Ask to show lights",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "What lights are there now?"
+				}
+			]
+		},
+		{
+			"title": "Turn on living room light",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "Turn on the living room light."
+				}
+			]
+		},
+		{
+			"title": "Add bedroom lights",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "Add two lights for the bedroom."
+				}
+			]
+		},
+		{
+			"title": "Specify bedroom lights",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "One should be 'His Lamp' and one should be 'Her Lamp'. They should both be off. Can you pick random colors for them?"
+				}
+			]
+		},
+		{
+			"title": "Remove and list",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "Can you remove the living room light and then list all of the lights again?"
+				}
+			]
+		},
+		{
+			"title": "Exit",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "exit"
+				},
+				{
+					"action": "closeTerminal"
+				},
+				{
+					"action": "executeVSCodeCommand",
+					"command": "workbench.action.closePanel"
+				}
+			]
+		}
+	]
+}

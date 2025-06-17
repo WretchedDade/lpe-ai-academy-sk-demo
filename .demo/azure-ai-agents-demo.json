@@ -1,0 +1,111 @@
+{
+	"$schema": "https://demotime.elio.dev/demo-time.schema.json",
+	"title": "Azure AI Agents Demo",
+	"description": "",
+	"version": 2,
+	"demos": [
+		{
+			"title": "Initialize",
+			"steps": [
+				{
+					"action": "replace",
+					"path": "Program.cs",
+					"position": "start:end",
+					"contentPath": ".demo/azure-ai-agents-demo/initial.cs",
+					"lineInsertionDelay": 75
+				}
+			]
+		},
+		{
+			"title": "Create Azure AI Agents Client",
+			"steps": [
+				{
+					"action": "replace",
+					"path": "Program.cs",
+					"position": "8",
+					"contentPath": ".demo/azure-ai-agents-demo/agents-client.cs",
+					"lineInsertionDelay": 75
+				}
+			]
+		},
+		{
+			"title": "Add Bing Grounding Config",
+			"steps": [
+				{
+					"action": "replace",
+					"path": "Program.cs",
+					"position": "13",
+					"contentPath": ".demo/azure-ai-agents-demo/bing-grounding-info.cs",
+					"lineInsertionDelay": 75
+				}
+			]
+		},
+		{
+			"title": "Create Agent",
+			"steps": [
+				{
+					"action": "replace",
+					"path": "Program.cs",
+					"position": "19",
+					"contentPath": ".demo/azure-ai-agents-demo/agent-creation.cs",
+					"lineInsertionDelay": 75
+				}
+			]
+		},
+		{
+			"title": "Add Chat Loop",
+			"steps": [
+				{
+					"action": "replace",
+					"path": "Program.cs",
+					"position": "31",
+					"contentPath": ".demo/azure-ai-agents-demo/chat-loop.cs",
+					"lineInsertionDelay": 25
+				}
+			]
+		},
+		{
+			"title": "Run",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "dotnet run -v q"
+				}
+			]
+		},
+		{
+			"title": "MSFT",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "What is the price of the MSFT stock?"
+				}
+			]
+		},
+		{
+			"title": "APPL",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "What about APPL?"
+				}
+			]
+		},
+		{
+			"title": "Exit",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "exit"
+				},
+				{
+					"action": "closeTerminal"
+				},
+				{
+					"action": "executeVSCodeCommand",
+					"command": "workbench.action.closePanel"
+				}
+			]
+		}
+	]
+}

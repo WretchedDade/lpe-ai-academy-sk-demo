@@ -1,0 +1,79 @@
+{
+	"$schema": "https://demotime.elio.dev/demo-time.schema.json",
+	"title": "Basic Embedding Demo",
+	"description": "",
+	"version": 2,
+	"demos": [
+		{
+			"title": "Initialize",
+			"description": "Replace program.cs content with initial code.",
+			"steps": [
+				{
+					"action": "replace",
+					"path": "Program.cs",
+					"position": "start:end",
+					"contentPath": ".demo/basic-embedding-demo/initial.cs"
+				}
+			]
+		},
+		{
+			"title": "Generate Embeddings",
+			"description": "Generate embeddings for the text in Program.cs.",
+			"steps": [
+				{
+					"action": "insert",
+					"path": "Program.cs",
+					"position": "18",
+					"contentPath": ".demo/basic-embedding-demo/generate-embeddings.cs",
+					"lineInsertionDelay": 100
+				},
+				{
+					"action": "highlight",
+					"path": "Program.cs",
+					"position": "19:21"
+				}
+			]
+		},
+		{
+			"title": "Calculate Similarity",
+			"description": "Calculate similarity between the generated embeddings.",
+			"steps": [
+				{
+					"action": "insert",
+					"path": "Program.cs",
+					"position": "22",
+					"contentPath": ".demo/basic-embedding-demo/calculate-similarity.cs",
+					"lineInsertionDelay": 100
+				},
+				{
+					"action": "highlight",
+					"path": "Program.cs",
+					"position": "21:23"
+				}
+			]
+		},
+		{
+			"title": "Run",
+			"description": "Run the application to see the chat client in action.",
+			"steps": [
+				{
+					"action": "executeTerminalCommand",
+					"command": "dotnet run -v q"
+				}
+			]
+		},
+		{
+			"title": "Exit",
+			"description": "Exit the application to continue with the next step.",
+			"steps": [
+				{
+					"action": "closeTerminal"
+				},
+				{
+					"action": "executeVSCodeCommand",
+					"command": "workbench.action.closePanel"
+				}
+			]
+		}
+	]
+}
