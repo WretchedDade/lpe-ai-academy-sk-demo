@@ -5,6 +5,62 @@
 	"version": 2,
 	"demos": [
 		{
+			"title": "Intro",
+			"description": "",
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			},
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/agents.md"
+				}
+			]
+		},
+		{
+			"title": "What are agents",
+			"description": "",
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/what-are-agents.md"
+				}
+			],
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			}
+		},
+		{
+			"title": "Agents Diagram",
+			"description": "",
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/agents-diagram.md"
+				}
+			],
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			}
+		},
+		{
+			"title": "Demo Overview",
+			"description": "",
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/agent-demo.md"
+				}
+			],
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			}
+		},
+		{
 			"title": "Initialize",
 			"steps": [
 				{
@@ -13,7 +69,11 @@
 					"position": "start:end",
 					"contentPath": ".demo/basic-agent-demo/initial.cs"
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Add agent definition",
@@ -30,7 +90,11 @@
 					"path": "Program.cs",
 					"position": "26:42"
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Replace history with thread",
@@ -52,7 +116,11 @@
 					"path": "Program.cs",
 					"position": "57:61"
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Run",
@@ -70,7 +138,11 @@
 					"action": "executeTerminalCommand",
 					"command": "What lights are there?"
 				}
-			]
+			],
+			"icons": {
+				"start": "console",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Ask to add a light",
@@ -79,7 +151,11 @@
 					"action": "executeTerminalCommand",
 					"command": "Add a light named 'Living Room'."
 				}
-			]
+			],
+			"icons": {
+				"start": "console",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Ask to show lights",
@@ -88,7 +164,11 @@
 					"action": "executeTerminalCommand",
 					"command": "What lights are there now?"
 				}
-			]
+			],
+			"icons": {
+				"start": "console",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Exit",
@@ -104,7 +184,11 @@
 					"action": "executeVSCodeCommand",
 					"command": "workbench.action.closePanel"
 				}
-			]
+			],
+			"icons": {
+				"start": "debug-stop",
+				"end": "pass-filled"
+			}
 		}
 	]
 }

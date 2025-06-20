@@ -5,16 +5,66 @@
 	"version": 2,
 	"demos": [
 		{
-			"title": "Initialize",
+			"title": "Intro",
+			"description": "",
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			},
 			"steps": [
 				{
 					"action": "replace",
 					"path": "Program.cs",
 					"position": "start:end",
-					"contentPath": ".demo/azure-ai-agents-demo/initial.cs",
-					"lineInsertionDelay": 75
+					"contentPath": ".demo/azure-ai-agents-demo/initial.cs"
+				},
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/azure-ai-agents.md"
 				}
 			]
+		},
+		{
+			"title": "What are Azure AI Agents",
+			"description": "",
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/what-are-azure-ai-agents.md"
+				}
+			],
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			}
+		},
+		{
+			"title": "Azure AI Agents Diagram",
+			"description": "",
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/azure-ai-agents-diagram.md"
+				}
+			],
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			}
+		},
+		{
+			"title": "Demo Overview",
+			"description": "",
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/azure-ai-agent-demo.md"
+				}
+			],
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Create Azure AI Agents Client",
@@ -26,7 +76,11 @@
 					"contentPath": ".demo/azure-ai-agents-demo/agents-client.cs",
 					"lineInsertionDelay": 75
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Add Bing Grounding Config",
@@ -38,7 +92,11 @@
 					"contentPath": ".demo/azure-ai-agents-demo/bing-grounding-info.cs",
 					"lineInsertionDelay": 75
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Create Agent",
@@ -50,7 +108,11 @@
 					"contentPath": ".demo/azure-ai-agents-demo/agent-creation.cs",
 					"lineInsertionDelay": 75
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Add Chat Loop",
@@ -61,8 +123,17 @@
 					"position": "31",
 					"contentPath": ".demo/azure-ai-agents-demo/chat-loop.cs",
 					"lineInsertionDelay": 25
+				},
+				{
+					"action": "highlight",
+					"path": "Program.cs",
+					"position": "50:66"
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Run",
@@ -80,7 +151,11 @@
 					"action": "executeTerminalCommand",
 					"command": "What is the price of the MSFT stock?"
 				}
-			]
+			],
+			"icons": {
+				"start": "console",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "APPL",
@@ -89,7 +164,11 @@
 					"action": "executeTerminalCommand",
 					"command": "What about APPL?"
 				}
-			]
+			],
+			"icons": {
+				"start": "console",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Exit",
@@ -105,7 +184,11 @@
 					"action": "executeVSCodeCommand",
 					"command": "workbench.action.closePanel"
 				}
-			]
+			],
+			"icons": {
+				"start": "debug-stop",
+				"end": "pass-filled"
+			}
 		}
 	]
 }

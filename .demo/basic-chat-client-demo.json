@@ -5,6 +5,62 @@
 	"version": 2,
 	"demos": [
 		{
+			"title": "Intro",
+			"description": "",
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			},
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/semantic-kernel-intro.md"
+				}
+			]
+		},
+		{
+			"title": "What is Semantic Kernel",
+			"description": "",
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/what-is-semantic-kernel.md"
+				}
+			],
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			}
+		},
+		{
+			"title": "Semantic Kernel Diagram",
+			"description": "",
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/semantic-kernel-diagram.md"
+				}
+			],
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			}
+		},
+		{
+			"title": "Demo Overview",
+			"description": "",
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/chat-demo.md"
+				}
+			],
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			}
+		},
+		{
 			"title": "Build Kernel",
 			"description": "Build a kernel with a basic chat client.",
 			"steps": [
@@ -15,7 +71,11 @@
 					"contentPath": ".demo/basic-chat-client-demo/build-kernel.cs",
 					"lineInsertionDelay": 100
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Get Chat Client",
@@ -38,7 +98,11 @@
 					"path": "Program.cs",
 					"position": "12:13"
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Add Chat Loop",
@@ -63,7 +127,11 @@
 					"path": "Program.cs",
 					"position": "29:30"
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Run",
@@ -83,7 +151,11 @@
 					"action": "executeTerminalCommand",
 					"command": "Hi! I am doing a demo for the learning product engineering team on how to use semantic kernel with a basic chat client. Please say hi and share some of things you like about semantic kernel."
 				}
-			]
+			],
+			"icons": {
+				"start": "console",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Show lack of history",
@@ -93,7 +165,11 @@
 					"action": "executeTerminalCommand",
 					"command": "Hi, what have we talked about so far?"
 				}
-			]
+			],
+			"icons": {
+				"start": "console",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Exit",
@@ -110,7 +186,11 @@
 					"action": "executeVSCodeCommand",
 					"command": "workbench.action.closePanel"
 				}
-			]
+			],
+			"icons": {
+				"start": "debug-stop",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Use Chat History",
@@ -135,7 +215,11 @@
 					"path": "Program.cs",
 					"position": "30:37"
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Run",
@@ -155,7 +239,11 @@
 					"action": "executeTerminalCommand",
 					"command": "Hi! I am doing a demo for the learning product engineering team on how to use semantic kernel with a basic chat client. Please say hi and share some of things you like about semantic kernel."
 				}
-			]
+			],
+			"icons": {
+				"start": "console",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Show ability to recall",
@@ -165,7 +253,11 @@
 					"action": "executeTerminalCommand",
 					"command": "Hi, what have we talked about so far?"
 				}
-			]
+			],
+			"icons": {
+				"start": "console",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Exit",
@@ -182,7 +274,11 @@
 					"action": "executeVSCodeCommand",
 					"command": "workbench.action.closePanel"
 				}
-			]
+			],
+			"icons": {
+				"start": "debug-stop",
+				"end": "pass-filled"
+			}
 		}
 	]
 }

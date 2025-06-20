@@ -5,6 +5,48 @@
 	"version": 2,
 	"demos": [
 		{
+			"title": "Intro",
+			"description": "",
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			},
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/embeddings.md"
+				}
+			]
+		},
+		{
+			"title": "What are embeddings",
+			"description": "",
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/what-are-embeddings.md"
+				}
+			],
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			}
+		},
+		{
+			"title": "Demo Overview",
+			"description": "",
+			"steps": [
+				{
+					"action": "openSlide",
+					"path": "/.demo/slides/embedding-demo.md"
+				}
+			],
+			"icons": {
+				"start": "vm",
+				"end": "pass-filled"
+			}
+		},
+		{
 			"title": "Initialize",
 			"description": "Replace program.cs content with initial code.",
 			"steps": [
@@ -14,7 +56,11 @@
 					"position": "start:end",
 					"contentPath": ".demo/basic-embedding-demo/initial.cs"
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Generate Embeddings",
@@ -32,7 +78,11 @@
 					"path": "Program.cs",
 					"position": "19:21"
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Calculate Similarity",
@@ -50,7 +100,11 @@
 					"path": "Program.cs",
 					"position": "21:23"
 				}
-			]
+			],
+			"icons": {
+				"start": "file-code",
+				"end": "pass-filled"
+			}
 		},
 		{
 			"title": "Run",
@@ -73,7 +127,11 @@
 					"action": "executeVSCodeCommand",
 					"command": "workbench.action.closePanel"
 				}
-			]
+			],
+			"icons": {
+				"start": "debug-stop",
+				"end": "pass-filled"
+			}
 		}
 	]
 }
